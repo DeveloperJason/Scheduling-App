@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="720.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="scheduling.ViewControllers.AddAppointmentViewController">
+   <children>
+      <Label fx:id="mainTitle" alignment="CENTER" layoutY="26.0" prefHeight="27.0" prefWidth="600.0" text="Add Appointment" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="84.0" text="ID" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="apptId" disable="true" editable="false" layoutX="110.0" layoutY="76.0" prefHeight="25.0" prefWidth="275.0" style="-fx-font-family: arial;" text="Auto" AnchorPane.leftAnchor="110.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="40.0" layoutY="123.0" text="Title" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="120.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="apptTitle" layoutX="110.0" layoutY="116.0" prefHeight="25.0" prefWidth="275.0" style="-fx-font-family: arial;" AnchorPane.leftAnchor="110.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="37.0" layoutY="161.0" text="Description" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="160.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="apptDesc" layoutX="110.0" layoutY="156.0" prefHeight="25.0" prefWidth="275.0" style="-fx-font-family: arial;" AnchorPane.leftAnchor="110.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="30.0" layoutY="184.0" text="Location" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="200.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="apptLocation" layoutX="110.0" layoutY="196.0" prefHeight="25.0" prefWidth="275.0" style="-fx-font-family: arial;" AnchorPane.leftAnchor="110.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="30.0" layoutY="215.0" text="Type" AnchorPane.leftAnchor="425.0" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="apptType" layoutX="501.0" layoutY="76.0" prefHeight="25.0" prefWidth="190.0" style="-fx-font-family: arial;" AnchorPane.leftAnchor="501.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <ChoiceBox fx:id="apptContact" layoutX="500.0" layoutY="117.0" prefWidth="150.0" style="-fx-font-family: arial;" AnchorPane.leftAnchor="500.0" />
+      <Label layoutX="416.0" layoutY="120.0" text="Contact" AnchorPane.leftAnchor="425.0" AnchorPane.topAnchor="120.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="419.0" layoutY="160.0" text="Customer" AnchorPane.leftAnchor="425.0" AnchorPane.topAnchor="160.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="apptCustomer" layoutX="500.0" layoutY="157.0" prefWidth="150.0" style="-fx-font-family: arial;" AnchorPane.leftAnchor="500.0" />
+      <Label layoutX="426.0" layoutY="201.0" text="User" AnchorPane.leftAnchor="426.0" AnchorPane.topAnchor="200.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="apptUser" layoutX="500.0" layoutY="197.0" prefWidth="150.0" style="-fx-font-family: arial;" AnchorPane.leftAnchor="500.0" />
+      <Label layoutX="26.0" layoutY="242.0" text="Appt Date" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="240.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="apptDate" editable="false" layoutX="110.0" layoutY="236.0" style="-fx-font-family: arial;" AnchorPane.leftAnchor="110.0" />
+      <Button fx:id="addBtn" layoutX="24.0" layoutY="346.0" mnemonicParsing="false" text="Add" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="backBtn" layoutX="636.0" layoutY="344.0" mnemonicParsing="false" text="Back" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="312.0" layoutY="240.0" text="Start Hour" AnchorPane.leftAnchor="310.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="327.0" layoutY="280.0" text="End Hour" AnchorPane.leftAnchor="310.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="apptStartHour" layoutX="403.0" layoutY="236.0" prefHeight="24.0" prefWidth="45.0" style="-fx-font-family: arial;" AnchorPane.leftAnchor="385.0" />
+      <ChoiceBox fx:id="apptEndHour" layoutX="403.0" layoutY="276.0" prefHeight="24.0" prefWidth="45.0" style="-fx-font-family: arial;" AnchorPane.leftAnchor="385.0" />
+      <Label layoutX="451.0" layoutY="240.0" text="Start Minute" AnchorPane.leftAnchor="440.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="453.0" layoutY="280.0" text="End Minute" AnchorPane.leftAnchor="440.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="apptStartMinute" layoutX="542.0" layoutY="236.0" prefHeight="24.0" prefWidth="45.0" style="-fx-font-family: arial;" AnchorPane.leftAnchor="525.0" />
+      <ChoiceBox fx:id="apptEndMinute" layoutX="575.0" layoutY="276.0" prefHeight="24.0" prefWidth="45.0" style="-fx-font-family: arial;" AnchorPane.leftAnchor="525.0" />
+      <Label layoutX="447.0" layoutY="317.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="apptStartPM" layoutX="646.0" layoutY="239.0" mnemonicParsing="false" text="PM" AnchorPane.rightAnchor="30.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="apptStartAM" layoutX="594.0" layoutY="239.0" mnemonicParsing="false" selected="true" text="AM" AnchorPane.rightAnchor="80.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="apptEndPM" layoutX="642.0" layoutY="279.0" mnemonicParsing="false" text="PM" AnchorPane.rightAnchor="30.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></RadioButton>
+      <RadioButton fx:id="apptEndAM" layoutX="590.0" layoutY="279.0" mnemonicParsing="false" selected="true" text="AM" AnchorPane.rightAnchor="80.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></RadioButton>
+      <Label fx:id="errorLabel" layoutX="30.0" layoutY="317.0" prefHeight="17.0" prefWidth="668.0" textFill="RED" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

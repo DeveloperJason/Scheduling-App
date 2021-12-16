@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="scheduling.ViewControllers.AddCustomerViewController">
+   <children>
+      <Label fx:id="mainTitle" alignment="CENTER" layoutY="33.0" prefHeight="27.0" prefWidth="600.0" text="Add Customer" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="77.0" text="ID" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="75.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cusId" disable="true" editable="false" layoutX="100.0" layoutY="71.0" prefHeight="25.0" prefWidth="275.0" text="Auto" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="30.0" layoutY="113.0" text="Name" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="110.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cusName" layoutX="100.0" layoutY="106.0" prefHeight="25.0" prefWidth="275.0" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <Label layoutX="30.0" layoutY="154.0" text="Address" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="145.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="192.0" text="Division" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="228.0" text="Country" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="250.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="263.0" text="Phone" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="285.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cusAddress" layoutX="100.0" layoutY="141.0" prefHeight="25.0" prefWidth="275.0" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <ChoiceBox fx:id="cusDivision" layoutX="100.0" layoutY="176.0" prefWidth="150.0" style="-fx-font-family: arial;" AnchorPane.leftAnchor="100.0" />
+      <TextField fx:id="cusPostal" layoutX="100.0" layoutY="211.0" prefHeight="25.0" prefWidth="275.0" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <ChoiceBox fx:id="cusCountry" layoutX="100.0" layoutY="246.0" prefWidth="150.0" style="-fx-font-family: arial;" AnchorPane.leftAnchor="100.0" />
+      <TextField fx:id="cusPhone" layoutX="100.0" layoutY="281.0" prefHeight="25.0" prefWidth="275.0" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="backBtn" layoutX="519.0" layoutY="354.0" mnemonicParsing="false" text="Back" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="addBtn" layoutX="33.0" layoutY="354.0" mnemonicParsing="false" text="Add" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="40.0" layoutY="202.0" text="Postal" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="215.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorLabel" layoutX="391.0" layoutY="78.0" prefHeight="235.0" prefWidth="170.0" textFill="RED" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="71.0">
+         <font>
+            <Font name="Arial" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

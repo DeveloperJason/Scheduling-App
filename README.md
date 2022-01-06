@@ -1,4 +1,4 @@
-# WGU-C195
+# Java Scheduling App
 Scheduling application in Java
 
 Scheduling Project C195 Advanced Java Concepts
